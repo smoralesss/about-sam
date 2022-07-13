@@ -1,0 +1,27 @@
+
+p{
+    text-align: center;
+}
+body{
+    text-align: center;
+}
+img {
+    height: 200px;
+    border: 1px solid #000;
+}
+.center-image {
+    /*this sets the picture to move to the middle*/
+    text-align: center;
+    /*this tells it to but the img in block and not inline*/
+    display: block;
+    /*this sets the margin (space between leftScreen and leftImage) to become whatever it needs to be (lets it float horizontally).
+    If you dont set it to auto, it centers the image and then the margin is set to 0 which sucks it right back over.*/
+    margin: auto;
+}
+/* this was a beast to figure out. any ul is now displayed like a table, given no margin, and the text is forced to align left.*/
+
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
